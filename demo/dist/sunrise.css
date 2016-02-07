@@ -16,6 +16,9 @@ a:hover {
   text-decoration: none;
   color: inherit; }
 
+body {
+  font-family: 'Source Sans Pro', sans-serif; }
+
 .sr-btn {
   outline: none;
   border: none;
@@ -63,16 +66,12 @@ a:hover {
   margin-bottom: 6px;
   padding: 6px 10px; }
 
-textarea {
-  resize: none; }
-
-.sr-input {
-  padding: 5px;
-  border: 1px solid #ADADAD; }
-  .sr-input[disabled], .sr-input--disabled {
-    color: #FFFFFF;
-    background-color: #D6D6D6; }
-    .sr-input[disabled] :hover, .sr-input--disabled :hover {
-      cursor: not-allowed !important; }
+.sr-label {
+  text-transform: uppercase; }
+  .sr-label font {
+    weight: bold;
+    size: 14px; }
+  .sr-label--disabled {
+    color: #858585; }
 
 /*# sourceMappingURL=sunrise.css.map */

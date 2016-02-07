@@ -6,6 +6,7 @@
     <title>kss-node Styleguide</title>
     <meta name="description" content="" />
     <meta name="generator" content="kss-node" />
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="public/kss.css" />
     <link rel="stylesheet" href="sunrise.css">
 
@@ -23,14 +24,13 @@
           <nav class="kss-nav">
             <ul class="kss-menu" data-kss-ref="1">
               <li class="kss-menu-item"><a href="./"><span class="kss-ref">0</span><span class="kss-name">Overview</span></a></li>
-              <li class="kss-menu-item"><a href="section-1.html"><span class="kss-ref">1</span><span class="kss-name">Buttons</span></a></li>
-              <li class="kss-menu-item"><a href="section-2.html"><span class="kss-ref">2</span><span class="kss-name">Input fields</span></a></li>
-              <li class="kss-menu-item"><a href="section-3.html"><span class="kss-ref">3</span><span class="kss-name">Label</span></a></li>
+              <li class="kss-menu-item"><a href="section-1.html"><span class="kss-ref">1</span><span class="kss-name">Atoms</span></a></li>
             </ul>
             <ul class="kss-menu-child">
-              <li class="kss-menu-item"><a href="#section-1.1"><span class="kss-ref">1.1</span><span class="kss-name">Base style &amp; state</span></a></li>
-              <li class="kss-menu-item"><a href="#section-1.2"><span class="kss-ref">1.2</span><span class="kss-name">Skin</span></a></li>
-              <li class="kss-menu-item"><a href="#section-1.3"><span class="kss-ref">1.3</span><span class="kss-name">Sizing</span></a></li>
+              <li class="kss-menu-item"><a href="#section-1.1.1"><span class="kss-ref">1.1.1</span><span class="kss-name">Button: base</span></a></li>
+              <li class="kss-menu-item"><a href="#section-1.1.2"><span class="kss-ref">1.1.2</span><span class="kss-name">Button: skin</span></a></li>
+              <li class="kss-menu-item"><a href="#section-1.1.3"><span class="kss-ref">1.1.3</span><span class="kss-name">Button: sizing</span></a></li>
+              <li class="kss-menu-item"><a href="#section-1.2.1"><span class="kss-ref">1.2.1</span><span class="kss-name">Label: base</span></a></li>
             </ul>
           </nav>
         </div>
@@ -38,14 +38,10 @@
       <div class="kss-content">
         <article class="kss-article">
           <section id="section-1" class="kss-section kss-depth-1">
-            <h1 class="kss-title"><span class="kss-ref">1</span> Buttons</h1>
+            <h1 class="kss-title"><span class="kss-ref">1</span> Atoms</h1>
           </section>
-          <section id="section-1.1" class="kss-section kss-depth-2">
-            <h1 class="kss-title"><span class="kss-ref">1.1</span> Base style &amp; state</h1>
-            <div class="kss-description">
-              <p>Basic styling and a simple state</p>
-
-            </div>
+          <section id="section-1.1.1" class="kss-section kss-depth-3">
+            <h1 class="kss-title"><span class="kss-ref">1.1.1</span> Button: base</h1>
             <div class="kss-modifier-block">
               <h3 class="kss-title">Markup</h3>
               <div class="kss-markup">
@@ -60,7 +56,7 @@
               </div>
               <div class="kss-modifier">
                 <div class="kss-modifier-head">
-                  <div class="kss-modifier-name">.sr-btn--disabled</div>
+                  <code class="kss-modifier-name">.sr-btn--disabled</code>
                   <div class="kss-modifier-description">
                     Disabled button. If you use <code>&lt;button&gt;</code> element, that is acceptable to add <code>disabled</code> attribute instead.
                   </div>
@@ -73,12 +69,8 @@
             </div>
             <hr />
           </section>
-          <section id="section-1.2" class="kss-section kss-depth-2">
-            <h1 class="kss-title"><span class="kss-ref">1.2</span> Skin</h1>
-            <div class="kss-description">
-              <p>Different skins for the buttons</p>
-
-            </div>
+          <section id="section-1.1.2" class="kss-section kss-depth-3">
+            <h1 class="kss-title"><span class="kss-ref">1.1.2</span> Button: skin</h1>
             <div class="kss-modifier-block">
               <h3 class="kss-title">Markup</h3>
               <div class="kss-markup">
@@ -91,7 +83,7 @@
               </div>
               <div class="kss-modifier">
                 <div class="kss-modifier-head">
-                  <div class="kss-modifier-name">.sr-btn--primary</div>
+                  <code class="kss-modifier-name">.sr-btn--primary</code>
                   <div class="kss-modifier-description">
                     Primary button
                   </div>
@@ -102,7 +94,7 @@
               </div>
               <div class="kss-modifier">
                 <div class="kss-modifier-head">
-                  <div class="kss-modifier-name">.sr-btn--secondary</div>
+                  <code class="kss-modifier-name">.sr-btn--secondary</code>
                   <div class="kss-modifier-description">
                     Secondary button
                   </div>
@@ -113,7 +105,7 @@
               </div>
               <div class="kss-modifier">
                 <div class="kss-modifier-head">
-                  <div class="kss-modifier-name">.sr-btn--inverted</div>
+                  <code class="kss-modifier-name">.sr-btn--inverted</code>
                   <div class="kss-modifier-description">
                     Inverted button
                   </div>
@@ -125,8 +117,8 @@
             </div>
             <hr />
           </section>
-          <section id="section-1.3" class="kss-section kss-depth-2">
-            <h1 class="kss-title"><span class="kss-ref">1.3</span> Sizing</h1>
+          <section id="section-1.1.3" class="kss-section kss-depth-3">
+            <h1 class="kss-title"><span class="kss-ref">1.1.3</span> Button: sizing</h1>
             <div class="kss-description">
               <p>Fancy larger or smaller buttons?
 Add the following modifier class demonstrated below</p>
@@ -150,7 +142,7 @@ Add the following modifier class demonstrated below</p>
               </div>
               <div class="kss-modifier">
                 <div class="kss-modifier-head">
-                  <div class="kss-modifier-name">.sr-btn--large</div>
+                  <code class="kss-modifier-name">.sr-btn--large</code>
                   <div class="kss-modifier-description">
                     Large button.
                   </div>
@@ -164,7 +156,7 @@ Add the following modifier class demonstrated below</p>
               </div>
               <div class="kss-modifier">
                 <div class="kss-modifier-head">
-                  <div class="kss-modifier-name">.sr-btn--small</div>
+                  <code class="kss-modifier-name">.sr-btn--small</code>
                   <div class="kss-modifier-description">
                     Small button.
                   </div>
@@ -178,7 +170,7 @@ Add the following modifier class demonstrated below</p>
               </div>
               <div class="kss-modifier">
                 <div class="kss-modifier-head">
-                  <div class="kss-modifier-name">.sr-btn--mini</div>
+                  <code class="kss-modifier-name">.sr-btn--mini</code>
                   <div class="kss-modifier-description">
                     Mini button.
                   </div>
@@ -192,7 +184,7 @@ Add the following modifier class demonstrated below</p>
               </div>
               <div class="kss-modifier">
                 <div class="kss-modifier-head">
-                  <div class="kss-modifier-name">.sr-btn--block</div>
+                  <code class="kss-modifier-name">.sr-btn--block</code>
                   <div class="kss-modifier-description">
                     Block level button.
                   </div>
@@ -202,6 +194,32 @@ Add the following modifier class demonstrated below</p>
 <button class="sr-btn sr-btn--primary sr-btn--block">Button</button>
 <button class="sr-btn sr-btn--secondary sr-btn--block">Button</button>
 <button class="sr-btn sr-btn--inverted sr-btn--block">Button</button>
+                </div>
+              </div>
+            </div>
+            <hr />
+          </section>
+          <section id="section-1.2.1" class="kss-section kss-depth-3">
+            <h1 class="kss-title"><span class="kss-ref">1.2.1</span> Label: base</h1>
+            <div class="kss-modifier-block">
+              <h3 class="kss-title">Markup</h3>
+              <div class="kss-markup">
+                <pre><code class="lang-html">&lt;label class=&quot;sr-label [modifier class]&quot;&gt;Field label&lt;/label&gt;</code></pre>
+              </div>
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <label class="sr-label [modifier class]">Field label</label>
+                </div>
+              </div>
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <code class="kss-modifier-name">.sr-label--disabled</code>
+                  <div class="kss-modifier-description">
+                    Disabled label to belonging disabled field.
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  <label class="sr-label sr-label--disabled">Field label</label>
                 </div>
               </div>
             </div>
