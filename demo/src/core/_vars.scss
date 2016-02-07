@@ -1,0 +1,49 @@
+/*****************************************************************************/
+/*
+/* COLORS
+/*
+/*****************************************************************************/
+
+$white: #FFFFFF;
+
+// GRAY
+$alto: #D6D6D6;
+$bombay: #AAAEB2;
+$gray: #858585;
+$silver-chalice: #ADADAD;
+$spring-wood: #F5F2EA;
+$timberwolf: #D9D7CE;
+$wild-sand: #F5F5F5;
+
+// BLUE
+$ebony-clay: #2A343F;
+$ship-cove: #6989C2;
+
+// BLACK
+$mine-shaft: #333333;
+
+// YELLOW
+$my-sin: #FFBA27;
+
+// RED
+$valencia: #D54D4D;
+
+// GREEN
+$highland: #699E63;
+
+/*****************************************************************************/
+/*
+/* GENERAL STYLING
+/*
+/*****************************************************************************/
+
+// Links
+a,
+a:link,
+a:visited,
+a:active,
+a:hover {
+	text-decoration: none;
+	color: inherit;
+}
+

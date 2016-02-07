@@ -1,0 +1,64 @@
+/*****************************************************************************/
+/*
+/* COLORS
+/*
+/*****************************************************************************/
+/*****************************************************************************/
+/*
+/* GENERAL STYLING
+/*
+/*****************************************************************************/
+a,
+a:link,
+a:visited,
+a:active,
+a:hover {
+  text-decoration: none;
+  color: inherit; }
+
+.sr-btn {
+  outline: none;
+  border: none;
+  padding: 5px 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ADADAD;
+  background-color: #FFFFFF;
+  display: inline-block; }
+  .sr-btn:hover {
+    text-decoration: underline;
+    cursor: pointer; }
+  .sr-btn--primary {
+    background-color: #FFBA27;
+    color: #333333; }
+  .sr-btn--secondary {
+    border: 2px solid #ADADAD;
+    border-radius: 2px;
+    padding: 3px 20px; }
+  .sr-btn--inverted {
+    color: #FFFFFF;
+    background-color: #ADADAD; }
+  .sr-btn[disabled], .sr-btn--disabled {
+    cursor: not-allowed !important;
+    text-decoration: none !important; }
+    .sr-btn[disabled] :hover, .sr-btn--disabled :hover {
+      text-decoration: none !important;
+      cursor: not-allowed !important; }
+
+.sr-btn--large {
+  font-size: 15px; }
+.sr-btn--small {
+  font-size: 11px; }
+.sr-btn--mini {
+  font-size: 10px;
+  padding: 3px 6px;
+  border: 1px solid #ADADAD; }
+.sr-btn--block {
+  display: block;
+  clear: both;
+  width: 100%;
+  font-weight: bold;
+  margin-bottom: 6px;
+  padding: 6px 10px; }
+
+/*# sourceMappingURL=sunrise.css.map */
