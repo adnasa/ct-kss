@@ -25,25 +25,27 @@ a:hover {
   color: #ADADAD;
   background-color: #FFFFFF;
   display: inline-block; }
-  .sr-btn:hover {
-    text-decoration: underline;
-    cursor: pointer; }
-  .sr-btn--primary {
-    background-color: #FFBA27;
-    color: #333333; }
-  .sr-btn--secondary {
-    border: 2px solid #ADADAD;
-    border-radius: 2px;
-    padding: 3px 20px; }
-  .sr-btn--inverted {
-    color: #FFFFFF;
-    background-color: #ADADAD; }
-  .sr-btn[disabled], .sr-btn--disabled {
-    cursor: not-allowed !important;
-    text-decoration: none !important; }
-    .sr-btn[disabled] :hover, .sr-btn--disabled :hover {
-      text-decoration: none !important;
-      cursor: not-allowed !important; }
+
+.sr-btn:hover {
+  text-decoration: underline;
+  cursor: pointer; }
+.sr-btn[disabled], .sr-btn--disabled {
+  cursor: not-allowed !important;
+  text-decoration: none !important; }
+  .sr-btn[disabled] :hover, .sr-btn--disabled :hover {
+    text-decoration: none !important;
+    cursor: not-allowed !important; }
+
+.sr-btn--primary {
+  background-color: #FFBA27;
+  color: #333333; }
+.sr-btn--secondary {
+  border: 2px solid #ADADAD;
+  border-radius: 2px;
+  padding: 3px 20px; }
+.sr-btn--inverted {
+  color: #FFFFFF;
+  background-color: #ADADAD; }
 
 .sr-btn--large {
   font-size: 15px; }
@@ -60,5 +62,17 @@ a:hover {
   font-weight: bold;
   margin-bottom: 6px;
   padding: 6px 10px; }
+
+textarea {
+  resize: none; }
+
+.sr-input {
+  padding: 5px;
+  border: 1px solid #ADADAD; }
+  .sr-input[disabled], .sr-input--disabled {
+    color: #FFFFFF;
+    background-color: #D6D6D6; }
+    .sr-input[disabled] :hover, .sr-input--disabled :hover {
+      cursor: not-allowed !important; }
 
 /*# sourceMappingURL=sunrise.css.map */

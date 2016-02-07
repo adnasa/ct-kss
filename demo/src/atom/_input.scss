@@ -1,0 +1,38 @@
+// Input fields
+//
+// Styleguide 2
+input[text],
+input[password],
+textarea {
+}
+
+textarea {
+  resize: none;
+}
+
+// Fields
+//
+// Basic styling. Base class is `.sr-input`
+//
+// .sr-input--disabled - Disabled field. If you use `<input />`, `disabled` attribute works as well.
+//
+// Markup:
+// <input type="text" placeholder="{{modifier_class}}" class="sr-input {{modifier_class}}" />
+// <input type="text" value="{{modifier_class}}" class="sr-input {{modifier_class}}" />
+// <input type="password" placeholder="{{modifier_class}}" value="{{modifier_class}}" class="sr-input {{modifier_class}}" />
+// <textarea class="sr-input {{modifier_class}}">Hello world</textarea>
+//
+// Styleguide 2.1
+.sr-input {
+  padding: 5px;
+  border: 1px solid $silver-chalice;
+
+  &[disabled],
+  &--disabled {
+    color: $white;
+    background-color: $alto;
+    :hover {
+      cursor: not-allowed !important;
+    }
+  }
+}
