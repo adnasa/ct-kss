@@ -1,20 +1,15 @@
-// Buttons
-//
-// Buttons are important stuff to make things happens
-// But the buttons are also stuffed
+// Atoms
 //
 // Styleguide 1
 
-
-// Base styles & states
+// Button: base
 //
 // .sr-btn--disabled  - Disabled button. If you use `<button>` element, that is acceptable to add `disabled` attribute instead.
 //
 // Markup:
-// <button type="submit" class="sr-btn sr-btn--primary {{modifier_class}}">Button</button>
 // <button type="submit" class="sr-btn {{modifier_class}}">Button</button>
 //
-// Styleguide 1.1
+// Styleguide 1.1.1
 .sr-btn {
   outline: none;
   border: none;
@@ -32,6 +27,29 @@
     cursor: pointer;
   }
 
+  &[disabled],
+  &--disabled {
+    color: $white;
+    background-color: $silver-chalice;
+    cursor: not-allowed !important;
+    text-decoration: none !important;
+    :hover {
+      text-decoration: none !important;
+      cursor: not-allowed !important;
+    }
+  }
+}
+
+// Button: skin
+//
+// .sr-btn--primary   - Primary button
+// .sr-btn--secondary -  Secondary button
+//
+// Markup:
+// <button class="sr-btn {{modifier_class}}">Button</button>
+//
+// Styleguide 1.1.2
+.sr-btn {
   &--primary {
     background-color: $my-sin;
     color: $mine-shaft;
@@ -42,24 +60,9 @@
     border-radius: 2px;
     padding: 3px 20px;
   }
-
-  &--inverted {
-    color: $white;
-    background-color: $silver-chalice;
-  }
-
-  &[disabled],
-  &--disabled {
-    cursor: not-allowed !important;
-    text-decoration: none !important;
-    :hover {
-      text-decoration: none !important;
-      cursor: not-allowed !important;
-    }
-  }
 }
 
-// Sizing
+// Button: sizing
 //
 // Fancy larger or smaller buttons?
 // Add the following modifier class demonstrated below
@@ -73,9 +76,8 @@
 // <button class="sr-btn {{modifier_class}}">Button</button>
 // <button class="sr-btn sr-btn--primary {{modifier_class}}">Button</button>
 // <button class="sr-btn sr-btn--secondary {{modifier_class}}">Button</button>
-// <button class="sr-btn sr-btn--inverted {{modifier_class}}">Button</button>
 //
-// Styleguide 1.2
+// Styleguide 1.1.3
 .sr-btn {
   // Large
   &--large {

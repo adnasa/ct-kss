@@ -1,0 +1,23 @@
+// Input: base
+//
+// .sr-input--disabled - Disabled state
+//
+// Markup:
+// <input type="text" placeholder="text" class="sr-input {{modifier_class}}" />
+//
+// Styleguide 1.3.1
+.sr-input {
+  padding: 5px 10px;
+  width: 100%;
+  border: 1px solid $silver-chalice;
+
+  &:focus {
+    outline: none;
+  }
+
+  &[disabled],
+  &--disabled {
+    background-color: $silver-chalice;
+    color: $white;
+  }
+}

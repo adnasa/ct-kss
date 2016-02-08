@@ -1,0 +1,10 @@
+.sr-field {
+  text-align: left;
+
+  &--input,
+  &--label {
+    width: 100%;
+    clear: both;
+    display: block;
+  }
+}

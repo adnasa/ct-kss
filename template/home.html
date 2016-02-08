@@ -6,6 +6,7 @@
     <title>kss-node Styleguide</title>
     <meta name="description" content="" />
     <meta name="generator" content="kss-node" />
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="public/kss.css" />
     {{{styles}}}
     <!--[if lt IE 9]>
@@ -69,7 +70,7 @@
               {{#eachModifier}}
               <div class="kss-modifier">
                 <div class="kss-modifier-head">
-                  <div class="kss-modifier-name">{{name}}</div>
+                  <code class="kss-modifier-name">{{name}}</code>
                   <div class="kss-modifier-description">
                     {{{description}}}
                   </div>
@@ -80,6 +81,7 @@
               </div>
               {{/eachModifier}}
             </div>
+            <hr />
             {{else}}
             {{#if description}}
             <div class="kss-description">

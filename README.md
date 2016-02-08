@@ -9,3 +9,12 @@
 ---
 
 So far, this is a try out only.
+
+---
+
+
+## Setting things up
+```
+$ npm install
+$ npm run build
+```
