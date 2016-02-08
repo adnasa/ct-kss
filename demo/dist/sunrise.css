@@ -387,10 +387,6 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   background-color: #F5F2EA; }
 
-::-webkit-input-placeholder,
-::-moz-placeholder {
-  color: #FFFFFF; }
-
 .sr-btn {
   outline: none;
   border: none;
