@@ -451,32 +451,29 @@ a:hover {
   .sr-label[for] {
     cursor: pointer; }
 
-.footer-links {
+.list {
   list-style: none;
   margin: 0;
-  padding: 0; }
-  .footer-links--title, .footer-links--item {
+  padding: 5px; }
+  .list__title, .list__item {
     font-size: 1em;
     padding: 5px 0;
     text-transform: uppercase; }
-  .footer-links--title {
+  .list__title {
     color: #ADADAD;
     padding-top: 0; }
-    .footer-links--title a {
+    .list__title a {
       color: inherit; }
-  .footer-links--item {
+  .list__item {
     margin-bottom: 5px;
     color: #D6D6D6; }
-    .footer-links--item a {
-      color: inherit; }
-    .footer-links--item:last-of-type {
+    .list__item:last-of-type {
       margin-bottom: 0; }
+    .list__item a {
+      color: inherit; }
 
-.footer-nav {
-  padding: 10px;
+.list__dark {
   background-color: #2A343F;
   background-repeat: no-repeat; }
-  .footer-nav .footer-links--title {
-    color: #FFFFFF; }
 
 /*# sourceMappingURL=sunrise.css.map */
