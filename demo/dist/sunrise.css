@@ -367,18 +367,15 @@ optgroup {
 /* COLORS
 /*
 /*****************************************************************************/
-/*****************************************************************************/
-/*
-/* GENERAL STYLING
-/*
-/*****************************************************************************/
-a,
-a:link,
-a:visited,
-a:active,
-a:hover {
-  text-decoration: none;
-  color: inherit; }
+.sr-btn.sr-btn--primary {
+  color: #333333;
+  background-repeat: no-repeat;
+  background-color: #FFBA27; }
+
+.sr-btn.sr-btn--secondary {
+  border: 2px solid #ADADAD;
+  border-radius: 2px;
+  padding: 3px 20px; }
 
 * {
   box-sizing: border-box; }
@@ -387,9 +384,12 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   background-color: #F5F2EA; }
 
-::-webkit-input-placeholder,
-::-moz-placeholder {
-  color: #FFFFFF; }
+a,
+a:link,
+a:visited,
+a:active,
+a:hover {
+  text-decoration: none; }
 
 .sr-btn {
   outline: none;
@@ -413,14 +413,6 @@ body {
     text-decoration: none !important;
     cursor: not-allowed !important; }
 
-.sr-btn--primary {
-  background-color: #FFBA27;
-  color: #333333; }
-.sr-btn--secondary {
-  border: 2px solid #ADADAD;
-  border-radius: 2px;
-  padding: 3px 20px; }
-
 .sr-btn--large {
   font-size: 15px; }
 .sr-btn--small {
@@ -440,12 +432,14 @@ body {
 .sr-input {
   padding: 5px 10px;
   width: 100%;
-  border: 1px solid #ADADAD; }
+  border: 1px solid #ADADAD;
+  margin-bottom: 5px; }
   .sr-input:focus {
     outline: none; }
-  .sr-input[disabled], .sr-input--disabled {
+  .sr-input[disabled] {
     background-color: #ADADAD;
-    color: #FFFFFF; }
+    color: #FFFFFF;
+    cursor: not-allowed; }
 
 .sr-label {
   text-transform: uppercase; }
@@ -454,5 +448,35 @@ body {
     size: 14px; }
   .sr-label--disabled {
     color: #858585; }
+  .sr-label[for] {
+    cursor: pointer; }
+
+.footer-links {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .footer-links--title, .footer-links--item {
+    font-size: 1em;
+    padding: 5px 0;
+    text-transform: uppercase; }
+  .footer-links--title {
+    color: #ADADAD;
+    padding-top: 0; }
+    .footer-links--title a {
+      color: inherit; }
+  .footer-links--item {
+    margin-bottom: 5px;
+    color: #D6D6D6; }
+    .footer-links--item a {
+      color: inherit; }
+    .footer-links--item:last-of-type {
+      margin-bottom: 0; }
+
+.footer-nav {
+  padding: 10px;
+  background-color: #2A343F;
+  background-repeat: no-repeat; }
+  .footer-nav .footer-links--title {
+    color: #FFFFFF; }
 
 /*# sourceMappingURL=sunrise.css.map */

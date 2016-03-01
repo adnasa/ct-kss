@@ -1,0 +1,21 @@
+
+%base-action-profile {
+  color: $silver-chalice;
+  background: {
+    color: $white;
+  }
+}
+
+%primary-action-profile {
+  color: $mine-shaft;
+  background: {
+    repeat: no-repeat;
+    color: $my-sin;
+  }
+}
+
+%secondary-action-profile {
+  border: 2px solid $silver-chalice;
+  border-radius: 2px;
+  padding: 3px 20px;
+}
