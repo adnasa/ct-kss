@@ -29,6 +29,7 @@
             </ul>
             <ul class="kss-menu-child">
               <li class="kss-menu-item"><a href="#section-2.1.1"><span class="kss-ref">2.1.1</span><span class="kss-name">List</span></a></li>
+              <li class="kss-menu-item"><a href="#section-2.2.1"><span class="kss-ref">2.2.1</span><span class="kss-name">Card</span></a></li>
             </ul>
           </nav>
         </div>
@@ -43,16 +44,7 @@
             <div class="kss-modifier-block">
               <h3 class="kss-title">Markup</h3>
               <div class="kss-markup">
-                <pre><code class="lang-html">&lt;ul class=&quot;list&quot;&gt;
-    &lt;li class=&quot;list__title&quot;&gt;Title&lt;/li&gt;
-    &lt;li class=&quot;list__item&quot;&gt;
-        &lt;a href=&quot;#&quot;&gt;Item&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class=&quot;list__item&quot;&gt;
-        &lt;a href=&quot;#&quot;&gt;Item&lt;/a&gt;
-    &lt;/li&gt;
-&lt;/ul&gt;
-&lt;ul class=&quot;list list__dark&quot;&gt;
+                <pre><code class="lang-html">&lt;ul class=&quot;list [modifier class]&quot;&gt;
     &lt;li class=&quot;list__title&quot;&gt;Title&lt;/li&gt;
     &lt;li class=&quot;list__item&quot;&gt;
         &lt;a href=&quot;#&quot;&gt;Item&lt;/a&gt;
@@ -64,7 +56,7 @@
               </div>
               <div class="kss-modifier kss-modifier-original">
                 <div class="kss-modifier-example">
-                  <ul class="list">
+                  <ul class="list [modifier class]">
     <li class="list__title">Title</li>
     <li class="list__item">
         <a href="#">Item</a>
@@ -73,7 +65,17 @@
         <a href="#">Item</a>
     </li>
 </ul>
-<ul class="list list__dark">
+                </div>
+              </div>
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <code class="kss-modifier-name">.list--dark</code>
+                  <div class="kss-modifier-description">
+                    dark skin
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  <ul class="list list--dark">
     <li class="list__title">Title</li>
     <li class="list__item">
         <a href="#">Item</a>
@@ -82,6 +84,56 @@
         <a href="#">Item</a>
     </li>
 </ul>
+                </div>
+              </div>
+            </div>
+            <hr />
+          </section>
+          <section id="section-2.2.1" class="kss-section kss-depth-3">
+            <h1 class="kss-title"><span class="kss-ref">2.2.1</span> Card</h1>
+            <div class="kss-modifier-block">
+              <h3 class="kss-title">Markup</h3>
+              <div class="kss-markup">
+                <pre><code class="lang-html">&lt;div class=&quot;card [modifier class]&quot;&gt;
+    &lt;div class=&quot;card__title&quot;&gt;Title&lt;/div&gt;
+    &lt;div class=&quot;card__details&quot;&gt;
+        &lt;p class=&quot;card__item&quot;&gt;Bruce Wayne&lt;/p&gt;
+        &lt;p class=&quot;card__item&quot;&gt;VISA&lt;/p&gt;
+        &lt;p class=&quot;card__item&quot;&gt;**** **** **** **99&lt;/p&gt;
+        &lt;p class=&quot;card__item&quot;&gt;09.18&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <div class="card [modifier class]">
+    <div class="card__title">Title</div>
+    <div class="card__details">
+        <p class="card__item">Bruce Wayne</p>
+        <p class="card__item">VISA</p>
+        <p class="card__item">**** **** **** **99</p>
+        <p class="card__item">09.18</p>
+    </div>
+</div>
+                </div>
+              </div>
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <code class="kss-modifier-name">.card--dark</code>
+                  <div class="kss-modifier-description">
+                    dark skin
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  <div class="card card--dark">
+    <div class="card__title">Title</div>
+    <div class="card__details">
+        <p class="card__item">Bruce Wayne</p>
+        <p class="card__item">VISA</p>
+        <p class="card__item">**** **** **** **99</p>
+        <p class="card__item">09.18</p>
+    </div>
+</div>
                 </div>
               </div>
             </div>

@@ -4,17 +4,10 @@
 
 // List
 //
+// .list--dark - dark skin
+//
 // Markup:
-// <ul class="list">
-//     <li class="list__title">Title</li>
-//     <li class="list__item">
-//         <a href="#">Item</a>
-//     </li>
-//     <li class="list__item">
-//         <a href="#">Item</a>
-//     </li>
-// </ul>
-// <ul class="list list--dark">
+// <ul class="list {{modifier_class}}">
 //     <li class="list__title">Title</li>
 //     <li class="list__item">
 //         <a href="#">Item</a>

@@ -1,0 +1,49 @@
+// Card
+//
+// .card--dark - dark skin
+//
+// Markup:
+// <div class="card {{modifier_class}}">
+//     <div class="card__title">Title</div>
+//     <div class="card__details">
+//         <p class="card__item">Bruce Wayne</p>
+//         <p class="card__item">VISA</p>
+//         <p class="card__item">**** **** **** **99</p>
+//         <p class="card__item">09.18</p>
+//     </div>
+// </div>
+//
+// Styleguide 2.2.1
+.card {
+  border: 1px solid $alto;
+  padding: 15px 10px;
+
+  &__title {
+    color: $mine-shaft;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+  }
+
+  &__item {
+    color: $silver-chalice;
+    margin: {
+      top: 3px;
+      bottom: 3px;
+    }
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
+}
+
+.card {
+  &--dark {
+    background: {
+      color: $wild-sand;
+      repeat: no-repeat;
+    }
+
+    border: 1px solid $wild-sand;
+  }
+}
