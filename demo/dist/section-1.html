@@ -25,6 +25,7 @@
             <ul class="kss-menu" data-kss-ref="1">
               <li class="kss-menu-item"><a href="./"><span class="kss-ref">0</span><span class="kss-name">Overview</span></a></li>
               <li class="kss-menu-item"><a href="section-1.html"><span class="kss-ref">1</span><span class="kss-name">Atoms</span></a></li>
+              <li class="kss-menu-item"><a href="section-2.html"><span class="kss-ref">2</span><span class="kss-name">Molecules</span></a></li>
             </ul>
             <ul class="kss-menu-child">
               <li class="kss-menu-item"><a href="#section-1.1.1"><span class="kss-ref">1.1.1</span><span class="kss-name">Button: base</span></a></li>
@@ -46,11 +47,13 @@
             <div class="kss-modifier-block">
               <h3 class="kss-title">Markup</h3>
               <div class="kss-markup">
-                <pre><code class="lang-html">&lt;button type=&quot;submit&quot; class=&quot;sr-btn [modifier class]&quot;&gt;Button&lt;/button&gt;</code></pre>
+                <pre><code class="lang-html">&lt;button type=&quot;submit&quot; class=&quot;sr-btn [modifier class]&quot;&gt;Button&lt;/button&gt;
+&lt;a href=&quot;#&quot; class=&quot;sr-btn [modifier class]&quot;&gt;Button&lt;/a&gt;</code></pre>
               </div>
               <div class="kss-modifier kss-modifier-original">
                 <div class="kss-modifier-example">
                   <button type="submit" class="sr-btn [modifier class]">Button</button>
+<a href="#" class="sr-btn [modifier class]">Button</a>
                 </div>
               </div>
               <div class="kss-modifier">
@@ -62,6 +65,7 @@
                 </div>
                 <div class="kss-modifier-example">
                   <button type="submit" class="sr-btn sr-btn--disabled">Button</button>
+<a href="#" class="sr-btn sr-btn--disabled">Button</a>
                 </div>
               </div>
             </div>
@@ -72,11 +76,13 @@
             <div class="kss-modifier-block">
               <h3 class="kss-title">Markup</h3>
               <div class="kss-markup">
-                <pre><code class="lang-html">&lt;button class=&quot;sr-btn [modifier class]&quot;&gt;Button&lt;/button&gt;</code></pre>
+                <pre><code class="lang-html">&lt;button class=&quot;sr-btn [modifier class]&quot;&gt;Button&lt;/button&gt;
+&lt;a href=&quot;#&quot; class=&quot;sr-btn [modifier class]&quot;&gt;Button&lt;/a&gt;</code></pre>
               </div>
               <div class="kss-modifier kss-modifier-original">
                 <div class="kss-modifier-example">
                   <button class="sr-btn [modifier class]">Button</button>
+<a href="#" class="sr-btn [modifier class]">Button</a>
                 </div>
               </div>
               <div class="kss-modifier">
@@ -88,6 +94,7 @@
                 </div>
                 <div class="kss-modifier-example">
                   <button class="sr-btn sr-btn--primary">Button</button>
+<a href="#" class="sr-btn sr-btn--primary">Button</a>
                 </div>
               </div>
               <div class="kss-modifier">
@@ -99,6 +106,7 @@
                 </div>
                 <div class="kss-modifier-example">
                   <button class="sr-btn sr-btn--secondary">Button</button>
+<a href="#" class="sr-btn sr-btn--secondary">Button</a>
                 </div>
               </div>
             </div>
@@ -185,11 +193,11 @@ Add the following modifier class demonstrated below</p>
             <div class="kss-modifier-block">
               <h3 class="kss-title">Markup</h3>
               <div class="kss-markup">
-                <pre><code class="lang-html">&lt;label class=&quot;sr-label [modifier class]&quot;&gt;Field label&lt;/label&gt;</code></pre>
+                <pre><code class="lang-html">&lt;label for=&quot;example-input&quot; class=&quot;sr-label [modifier class]&quot;&gt;Field label&lt;/label&gt;</code></pre>
               </div>
               <div class="kss-modifier kss-modifier-original">
                 <div class="kss-modifier-example">
-                  <label class="sr-label [modifier class]">Field label</label>
+                  <label for="example-input" class="sr-label [modifier class]">Field label</label>
                 </div>
               </div>
               <div class="kss-modifier">
@@ -200,7 +208,7 @@ Add the following modifier class demonstrated below</p>
                   </div>
                 </div>
                 <div class="kss-modifier-example">
-                  <label class="sr-label sr-label--disabled">Field label</label>
+                  <label for="example-input" class="sr-label sr-label--disabled">Field label</label>
                 </div>
               </div>
             </div>
@@ -211,22 +219,13 @@ Add the following modifier class demonstrated below</p>
             <div class="kss-modifier-block">
               <h3 class="kss-title">Markup</h3>
               <div class="kss-markup">
-                <pre><code class="lang-html">&lt;input type=&quot;text&quot; placeholder=&quot;text&quot; class=&quot;sr-input [modifier class]&quot; /&gt;</code></pre>
+                <pre><code class="lang-html">&lt;input type=&quot;text&quot; placeholder=&quot;text&quot; class=&quot;sr-input &quot; /&gt;
+&lt;input type=&quot;text&quot; value=&quot;Not allowed&quot; placeholder=&quot;text&quot; class=&quot;sr-input &quot; disabled /&gt;</code></pre>
               </div>
               <div class="kss-modifier kss-modifier-original">
                 <div class="kss-modifier-example">
-                  <input type="text" placeholder="text" class="sr-input [modifier class]" />
-                </div>
-              </div>
-              <div class="kss-modifier">
-                <div class="kss-modifier-head">
-                  <code class="kss-modifier-name">.sr-input--disabled</code>
-                  <div class="kss-modifier-description">
-                    Disabled state
-                  </div>
-                </div>
-                <div class="kss-modifier-example">
-                  <input type="text" placeholder="text" class="sr-input sr-input--disabled" />
+                  <input type="text" placeholder="text" class="sr-input " />
+<input type="text" value="Not allowed" placeholder="text" class="sr-input " disabled />
                 </div>
               </div>
             </div>

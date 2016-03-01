@@ -3,7 +3,7 @@
 // .sr-label--disabled - Disabled label to belonging disabled field.
 //
 // Markup:
-// <label class="sr-label {{modifier_class}}">Field label</label>
+// <label for="example-input" class="sr-label {{modifier_class}}">Field label</label>
 //
 // Styleguide 1.2.1
 .sr-label {
@@ -15,5 +15,9 @@
 
   &--disabled {
     color: $gray;
+  }
+
+  &[for] {
+    cursor: pointer;
   }
 }

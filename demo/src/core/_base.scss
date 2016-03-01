@@ -6,3 +6,11 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   background-color: $spring-wood;
 }
+
+a,
+a:link,
+a:visited,
+a:active,
+a:hover {
+	text-decoration: none;
+}
