@@ -384,7 +384,7 @@ optgroup {
   border-radius: 2px;
   padding: 3px 20px; }
 
-.tile {
+.tile--card {
   padding: 15px 10px; }
 
 .clearfix::after,
@@ -448,28 +448,6 @@ a:hover {
     margin-bottom: 6px;
     padding: 6px 10px; }
 
-.sr-input {
-  padding: 5px 10px;
-  width: 100%;
-  border: 1px solid #ADADAD;
-  margin-bottom: 5px; }
-  .sr-input:focus {
-    outline: none; }
-  .sr-input[disabled] {
-    background-color: #ADADAD;
-    color: #FFFFFF;
-    cursor: not-allowed; }
-
-.sr-label {
-  text-transform: uppercase; }
-  .sr-label font {
-    weight: bold;
-    size: 14px; }
-  .sr-label--disabled {
-    color: #858585; }
-  .sr-label[for] {
-    cursor: pointer; }
-
 .list {
   list-style: none;
   margin: 0;
@@ -495,18 +473,18 @@ a:hover {
   background-color: #2A343F;
   background-repeat: no-repeat; }
 
-.tile {
+.tile--card {
   border: 1px solid #D6D6D6; }
-  .tile__title {
-    color: #333333;
-    text-transform: uppercase;
-    margin-bottom: 7px; }
-  .tile__item {
-    color: #ADADAD;
-    margin-top: 3px;
-    margin-bottom: 3px; }
-    .tile__item:first-of-type {
-      margin-top: 0; }
+.tile__title {
+  color: #333333;
+  text-transform: uppercase;
+  margin-bottom: 7px; }
+.tile__item {
+  color: #ADADAD;
+  margin-top: 3px;
+  margin-bottom: 3px; }
+  .tile__item:first-of-type {
+    margin-top: 0; }
 
 .tile--dark {
   background-color: #F5F5F5;
