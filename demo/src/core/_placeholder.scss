@@ -1,8 +1,25 @@
+%btn {
+  background-color: $white;
+  border: none;
+  color: $silver-chalice;
+  display: inline-block;
+  font-size: 17px;
+  letter-spacing: 1px;
+  outline: none;
+  padding: 5px 10px;
+  text-transform: uppercase;
+
+  &:visited {
+    color: $silver-chalice;
+  }
+}
+
 // COSMETICS
 %base-action-profile {
   color: $silver-chalice;
   background: {
     color: $white;
+    repeat: no-repeat;
   }
 }
 
@@ -10,9 +27,6 @@
 %primary-action-profile,
 .primary-action {
   color: $mine-shaft;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-
   background: {
     color: $my-sin;
     repeat: no-repeat;
