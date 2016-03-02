@@ -63,7 +63,7 @@
   &__item {
     &--group {
       @extend %clearfix;
-      
+
       .item {
         &__label,
         &__value {

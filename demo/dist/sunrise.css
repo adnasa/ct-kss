@@ -367,12 +367,19 @@ optgroup {
 /* COLORS
 /*
 /*****************************************************************************/
-.sr-btn.sr-btn--primary {
+.sr-btn.sr-btn--primary,
+.primary-action {
   color: #333333;
-  background-repeat: no-repeat;
-  background-color: #FFBA27; }
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: #FFBA27;
+  background-repeat: no-repeat; }
+  .sr-btn.sr-btn--primary:hover,
+  .primary-action:hover {
+    background: #ffc241; }
 
-.sr-btn.sr-btn--secondary {
+.sr-btn.sr-btn--secondary,
+.secondary-action {
   border: 2px solid #ADADAD;
   border-radius: 2px;
   padding: 3px 20px; }
@@ -423,21 +430,23 @@ a:hover {
     text-decoration: none !important;
     cursor: not-allowed !important; }
 
-.sr-btn--large {
-  font-size: 15px; }
-.sr-btn--small {
-  font-size: 11px; }
-.sr-btn--mini {
-  font-size: 10px;
-  padding: 3px 6px;
-  border: 1px solid #ADADAD; }
-.sr-btn--block {
-  display: block;
-  clear: both;
-  width: 100%;
-  font-weight: bold;
-  margin-bottom: 6px;
-  padding: 6px 10px; }
+.sr-btn {
+  font-size: 17px; }
+  .sr-btn--large {
+    font-size: 15px; }
+  .sr-btn--small {
+    font-size: 11px; }
+  .sr-btn--mini {
+    font-size: 10px;
+    padding: 3px 6px;
+    border: 1px solid #ADADAD; }
+  .sr-btn--block {
+    display: block;
+    clear: both;
+    width: 100%;
+    font-weight: bold;
+    margin-bottom: 6px;
+    padding: 6px 10px; }
 
 .sr-input {
   padding: 5px 10px;
