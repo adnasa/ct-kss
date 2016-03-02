@@ -8,6 +8,7 @@
 //
 // Markup:
 // <button type="submit" class="sr-btn {{modifier_class}}">Button</button>
+// <a href="#" class="sr-btn {{modifier_class}}">Button</a>
 //
 // Styleguide 1.1.1
 .sr-btn {
@@ -43,22 +44,20 @@
 // Button: skin
 //
 // .sr-btn--primary   - Primary button
-// .sr-btn--secondary -  Secondary button
+// .sr-btn--secondary - Secondary button
 //
 // Markup:
 // <button class="sr-btn {{modifier_class}}">Button</button>
+// <a href="#" class="sr-btn {{modifier_class}}">Button</a>
 //
 // Styleguide 1.1.2
 .sr-btn {
-  &--primary {
-    background-color: $my-sin;
-    color: $mine-shaft;
+  &.sr-btn--primary {
+    @extend %primary-action-profile;
   }
 
-  &--secondary {
-    border: 2px solid $silver-chalice;
-    border-radius: 2px;
-    padding: 3px 20px;
+  &.sr-btn--secondary {
+    @extend %secondary-action-profile;
   }
 }
 
