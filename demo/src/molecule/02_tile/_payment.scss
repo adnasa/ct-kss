@@ -47,3 +47,40 @@
     border: 1px solid $wild-sand;
   }
 }
+
+// Tile item: Grouped details
+//
+// Markup:
+// <div class="tile__details">
+//   <div class="tile__item tile__item--group">
+//     <div class="item__label">Order number:</div>
+//     <div class="item__value">1100334893</div>
+//   </div>
+// </div>
+//
+// Styleguide 2.2.2
+.tile {
+  &__item {
+    &--group {
+      @extend %clearfix;
+      
+      .item {
+        &__label,
+        &__value {
+          display: inline-block;
+          float: left;
+        }
+
+        &__label {
+          color: $mine-shaft;
+          font-weight: bold;
+        }
+
+        &__value {
+          @extend %clearfix;
+          padding-left: 13px;
+        }
+      }
+    }
+  }
+}

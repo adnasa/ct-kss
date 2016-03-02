@@ -30,3 +30,15 @@
 %tile-m {
   padding: 15px 10px;
 }
+
+
+// Clearings
+
+.clearfix,
+%clearfix {
+  &::after {
+    display: table;
+    clear: both;
+    content: "";
+  }
+}
