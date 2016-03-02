@@ -1,4 +1,5 @@
 
+// COSMETICS
 %base-action-profile {
   color: $silver-chalice;
   background: {
@@ -18,4 +19,14 @@
   border: 2px solid $silver-chalice;
   border-radius: 2px;
   padding: 3px 20px;
+}
+
+
+// SPACING
+%tile-s {
+  padding: 10px;
+}
+
+%tile-m {
+  padding: 15px 10px;
 }

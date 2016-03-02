@@ -1,22 +1,22 @@
-// Card
+// Tile
 //
-// .card--dark - dark skin
+// .tile--dark - Dark skin
 //
 // Markup:
-// <div class="card {{modifier_class}}">
-//     <div class="card__title">Title</div>
-//     <div class="card__details">
-//         <p class="card__item">Bruce Wayne</p>
-//         <p class="card__item">VISA</p>
-//         <p class="card__item">**** **** **** **99</p>
-//         <p class="card__item">09.18</p>
+// <div class="tile {{modifier_class}}">
+//     <div class="tile__title">Title</div>
+//     <div class="tile__details">
+//         <p class="tile__item">Bruce Wayne</p>
+//         <p class="tile__item">VISA</p>
+//         <p class="tile__item">**** **** **** **99</p>
+//         <p class="tile__item">09.18</p>
 //     </div>
 // </div>
 //
 // Styleguide 2.2.1
-.card {
+.tile {
   border: 1px solid $alto;
-  padding: 15px 10px;
+  @extend %tile-m;
 
   &__title {
     color: $mine-shaft;
@@ -37,7 +37,7 @@
   }
 }
 
-.card {
+.tile {
   &--dark {
     background: {
       color: $wild-sand;

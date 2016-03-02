@@ -377,6 +377,9 @@ optgroup {
   border-radius: 2px;
   padding: 3px 20px; }
 
+.tile {
+  padding: 15px 10px; }
+
 * {
   box-sizing: border-box; }
 
@@ -476,21 +479,20 @@ a:hover {
   background-color: #2A343F;
   background-repeat: no-repeat; }
 
-.card {
-  border: 1px solid #D6D6D6;
-  padding: 15px 10px; }
-  .card__title {
+.tile {
+  border: 1px solid #D6D6D6; }
+  .tile__title {
     color: #333333;
     text-transform: uppercase;
     margin-bottom: 7px; }
-  .card__item {
+  .tile__item {
     color: #ADADAD;
     margin-top: 3px;
     margin-bottom: 3px; }
-    .card__item:first-of-type {
+    .tile__item:first-of-type {
       margin-top: 0; }
 
-.card--dark {
+.tile--dark {
   background-color: #F5F5F5;
   background-repeat: no-repeat;
   border: 1px solid #F5F5F5; }
