@@ -1,4 +1,4 @@
-
+// COSMETICS
 %base-action-profile {
   color: $silver-chalice;
   background: {
@@ -6,16 +6,48 @@
   }
 }
 
-%primary-action-profile {
+// PRIMARY ACTION: COMPLETE PROFILE
+%primary-action-profile,
+.primary-action {
   color: $mine-shaft;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
   background: {
-    repeat: no-repeat;
     color: $my-sin;
+    repeat: no-repeat;
+  }
+
+  &:hover {
+    background: lighten($my-sin, 5%);
   }
 }
 
-%secondary-action-profile {
+%secondary-action-profile,
+.secondary-action {
   border: 2px solid $silver-chalice;
   border-radius: 2px;
   padding: 3px 20px;
+}
+
+
+// SPACING
+%tile-s {
+  padding: 10px;
+}
+
+%tile-m {
+  padding: 15px 10px;
+}
+
+
+// Clearings
+
+.clearfix,
+%clearfix {
+  &::after {
+    display: table;
+    clear: both;
+    content: "";
+  }
 }

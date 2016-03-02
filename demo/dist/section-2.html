@@ -29,7 +29,8 @@
             </ul>
             <ul class="kss-menu-child">
               <li class="kss-menu-item"><a href="#section-2.1.1"><span class="kss-ref">2.1.1</span><span class="kss-name">List</span></a></li>
-              <li class="kss-menu-item"><a href="#section-2.2.1"><span class="kss-ref">2.2.1</span><span class="kss-name">Card</span></a></li>
+              <li class="kss-menu-item"><a href="#section-2.2.1"><span class="kss-ref">2.2.1</span><span class="kss-name">Tile</span></a></li>
+              <li class="kss-menu-item"><a href="#section-2.2.2"><span class="kss-ref">2.2.2</span><span class="kss-name">Tile item: Grouped details</span></a></li>
             </ul>
           </nav>
         </div>
@@ -90,49 +91,74 @@
             <hr />
           </section>
           <section id="section-2.2.1" class="kss-section kss-depth-3">
-            <h1 class="kss-title"><span class="kss-ref">2.2.1</span> Card</h1>
+            <h1 class="kss-title"><span class="kss-ref">2.2.1</span> Tile</h1>
             <div class="kss-modifier-block">
               <h3 class="kss-title">Markup</h3>
               <div class="kss-markup">
-                <pre><code class="lang-html">&lt;div class=&quot;card [modifier class]&quot;&gt;
-    &lt;div class=&quot;card__title&quot;&gt;Title&lt;/div&gt;
-    &lt;div class=&quot;card__details&quot;&gt;
-        &lt;p class=&quot;card__item&quot;&gt;Bruce Wayne&lt;/p&gt;
-        &lt;p class=&quot;card__item&quot;&gt;VISA&lt;/p&gt;
-        &lt;p class=&quot;card__item&quot;&gt;**** **** **** **99&lt;/p&gt;
-        &lt;p class=&quot;card__item&quot;&gt;09.18&lt;/p&gt;
+                <pre><code class="lang-html">&lt;div class=&quot;tile [modifier class]&quot;&gt;
+    &lt;div class=&quot;tile__title&quot;&gt;Title&lt;/div&gt;
+    &lt;div class=&quot;tile__details&quot;&gt;
+        &lt;p class=&quot;tile__item&quot;&gt;Bruce Wayne&lt;/p&gt;
+        &lt;p class=&quot;tile__item&quot;&gt;VISA&lt;/p&gt;
+        &lt;p class=&quot;tile__item&quot;&gt;**** **** **** **99&lt;/p&gt;
+        &lt;p class=&quot;tile__item&quot;&gt;09.18&lt;/p&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
               </div>
               <div class="kss-modifier kss-modifier-original">
                 <div class="kss-modifier-example">
-                  <div class="card [modifier class]">
-    <div class="card__title">Title</div>
-    <div class="card__details">
-        <p class="card__item">Bruce Wayne</p>
-        <p class="card__item">VISA</p>
-        <p class="card__item">**** **** **** **99</p>
-        <p class="card__item">09.18</p>
+                  <div class="tile [modifier class]">
+    <div class="tile__title">Title</div>
+    <div class="tile__details">
+        <p class="tile__item">Bruce Wayne</p>
+        <p class="tile__item">VISA</p>
+        <p class="tile__item">**** **** **** **99</p>
+        <p class="tile__item">09.18</p>
     </div>
 </div>
                 </div>
               </div>
               <div class="kss-modifier">
                 <div class="kss-modifier-head">
-                  <code class="kss-modifier-name">.card--dark</code>
+                  <code class="kss-modifier-name">.tile--dark</code>
                   <div class="kss-modifier-description">
-                    dark skin
+                    Dark skin
                   </div>
                 </div>
                 <div class="kss-modifier-example">
-                  <div class="card card--dark">
-    <div class="card__title">Title</div>
-    <div class="card__details">
-        <p class="card__item">Bruce Wayne</p>
-        <p class="card__item">VISA</p>
-        <p class="card__item">**** **** **** **99</p>
-        <p class="card__item">09.18</p>
+                  <div class="tile tile--dark">
+    <div class="tile__title">Title</div>
+    <div class="tile__details">
+        <p class="tile__item">Bruce Wayne</p>
+        <p class="tile__item">VISA</p>
+        <p class="tile__item">**** **** **** **99</p>
+        <p class="tile__item">09.18</p>
     </div>
+</div>
+                </div>
+              </div>
+            </div>
+            <hr />
+          </section>
+          <section id="section-2.2.2" class="kss-section kss-depth-3">
+            <h1 class="kss-title"><span class="kss-ref">2.2.2</span> Tile item: Grouped details</h1>
+            <div class="kss-modifier-block">
+              <h3 class="kss-title">Markup</h3>
+              <div class="kss-markup">
+                <pre><code class="lang-html">&lt;div class=&quot;tile__details&quot;&gt;
+  &lt;div class=&quot;tile__item tile__item--group&quot;&gt;
+    &lt;div class=&quot;item__label&quot;&gt;Order number:&lt;/div&gt;
+    &lt;div class=&quot;item__value&quot;&gt;1100334893&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <div class="tile__details">
+  <div class="tile__item tile__item--group">
+    <div class="item__label">Order number:</div>
+    <div class="item__value">1100334893</div>
+  </div>
 </div>
                 </div>
               </div>
