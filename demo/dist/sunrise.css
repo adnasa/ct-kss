@@ -400,7 +400,11 @@ optgroup {
   border-radius: 2px;
   padding: 3px 20px; }
 
-.clearfix::after {
+.card {
+  padding: 15px 10px; }
+
+.clearfix::after,
+.card__content-row--grouped::after {
   display: table;
   clear: both;
   content: ""; }
@@ -430,5 +434,32 @@ a:hover {
   display: block;
   text-align: center;
   margin-bottom: 3px; }
+
+.card__title {
+  text-transform: uppercase;
+  margin-bottom: 10px; }
+.card__content-row {
+  margin-bottom: 5px; }
+
+.card--primary {
+  border: 1px solid #D6D6D6; }
+  .card--primary .card__title {
+    color: #333333; }
+  .card--primary .card__content-row {
+    color: #858585; }
+.card--secondary {
+  background-color: #D6D6D6; }
+  .card--secondary .card__title, .card--secondary .card__content-row {
+    color: #333333; }
+
+.card__content-row--grouped .card__content-label, .card__content-row--grouped .card__content-value {
+  float: left;
+  display: inline-block; }
+.card__content-row--grouped .card__content-label {
+  font-weight: bold;
+  color: #333333; }
+.card__content-row--grouped .card__content-value {
+  color: #858585;
+  padding-left: 8px; }
 
 /*# sourceMappingURL=sunrise.css.map */

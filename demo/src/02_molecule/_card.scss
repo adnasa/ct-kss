@@ -1,0 +1,88 @@
+// Card: base
+//
+// .card--primary   - Light version
+// .card--secondary - Dark version
+//
+// Markup:
+// <div class="card {{modifier_class}}">
+//     <div class="card__title">Credit</div>
+//     <div class="card__content-row">Sample name</div>
+//     <div class="card__content-row">VISA</div>
+// </div>
+//
+// Styleguide 2.1.1
+.card {
+  @extend %tile-m;
+
+  &__title {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  &__content-row {
+    margin-bottom: 5px;
+  }
+}
+
+.card {
+  &--primary {
+    border: 1px solid $alto;
+    .card {
+      &__title {
+        color: $mine-shaft;
+      }
+
+      &__content-row {
+        color: $gray;
+      }
+    }
+  }
+
+  &--secondary {
+    background-color: $alto;
+
+    .card {
+      &__title,
+      &__content-row {
+        color: $mine-shaft;
+      }
+    }
+  }
+}
+
+// Card: content-row
+//
+// Markup:
+// <div class="card">
+//     <div class="card__content-row">VALUE</div>
+//     <div class="card__content-row card__content-row--grouped">
+//         <label class="card__content-label">LABEL</label>
+//         <div class="card__content-value">VALUE</div>
+//     </div>
+// </div>
+//
+// Styleguide 2.1.2
+.card {
+  &__content-row {
+    &--grouped {
+      @extend %clearfix;
+      .card {
+        &__content-label,
+        &__content-value {
+          float: left;
+          display: inline-block;
+        }
+
+        &__content-label {
+          font-weight: bold;
+          color: $mine-shaft;
+        }
+
+        &__content-value {
+          color: $gray;
+          padding-left: 8px;
+        }
+      }
+    }
+  }
+}
