@@ -29,7 +29,8 @@
             </ul>
             <ul class="kss-menu-child">
               <li class="kss-menu-item"><a href="#section-2.1.1"><span class="kss-ref">2.1.1</span><span class="kss-name">Card: base</span></a></li>
-              <li class="kss-menu-item"><a href="#section-2.1.2"><span class="kss-ref">2.1.2</span><span class="kss-name">Card: grouped content-row</span></a></li>
+              <li class="kss-menu-item"><a href="#section-2.1.2"><span class="kss-ref">2.1.2</span><span class="kss-name">Card: content-row</span></a></li>
+              <li class="kss-menu-item"><a href="#section-2.2.1"><span class="kss-ref">2.2.1</span><span class="kss-name">Login form</span></a></li>
             </ul>
           </nav>
         </div>
@@ -93,7 +94,7 @@
             <hr />
           </section>
           <section id="section-2.1.2" class="kss-section kss-depth-3">
-            <h1 class="kss-title"><span class="kss-ref">2.1.2</span> Card: grouped content-row</h1>
+            <h1 class="kss-title"><span class="kss-ref">2.1.2</span> Card: content-row</h1>
             <div class="kss-modifier-block">
               <h3 class="kss-title">Markup</h3>
               <div class="kss-markup">
@@ -114,6 +115,57 @@
         <div class="card__content-value">VALUE</div>
     </div>
 </div>
+                </div>
+              </div>
+            </div>
+            <hr />
+          </section>
+          <section id="section-2.2.1" class="kss-section kss-depth-3">
+            <h1 class="kss-title"><span class="kss-ref">2.2.1</span> Login form</h1>
+            <div class="kss-modifier-block">
+              <h3 class="kss-title">Markup</h3>
+              <div class="kss-markup">
+                <pre><code class="lang-html">&lt;form class=&quot;form form--login&quot;&gt;
+  &lt;div class=&quot;form__field&quot;&gt;
+    &lt;h3 class=&quot;form__title&quot;&gt;Login&lt;/h3&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;form__field&quot;&gt;
+    &lt;p class=&quot;form__description&quot;&gt;If you have an account, please sign in for faster checkout.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;form__field&quot;&gt;
+    &lt;label class=&quot;form__label&quot; for=&quot;username&quot;&gt;Username&lt;/label&gt;
+    &lt;input class=&quot;form__input-field&quot; type=&quot;text&quot; id=&quot;username&quot; /&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;form__field&quot;&gt;
+    &lt;label class=&quot;form__label&quot; for=&quot;password&quot;&gt;Password&lt;/label&gt;
+    &lt;input class=&quot;form__input-field&quot; type=&quot;password&quot; id=&quot;password&quot; /&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;form__field form__field--actions&quot;&gt;
+    &lt;button class=&quot;sr-btn--primary sr-btn&quot;&gt;Login&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+              </div>
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <form class="form form--login">
+  <div class="form__field">
+    <h3 class="form__title">Login</h3>
+  </div>
+  <div class="form__field">
+    <p class="form__description">If you have an account, please sign in for faster checkout.</p>
+  </div>
+  <div class="form__field">
+    <label class="form__label" for="username">Username</label>
+    <input class="form__input-field" type="text" id="username" />
+  </div>
+  <div class="form__field">
+    <label class="form__label" for="password">Password</label>
+    <input class="form__input-field" type="password" id="password" />
+  </div>
+  <div class="form__field form__field--actions">
+    <button class="sr-btn--primary sr-btn">Login</button>
+  </div>
+</form>
                 </div>
               </div>
             </div>

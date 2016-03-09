@@ -1,0 +1,51 @@
+// Login form
+//
+// Markup:
+// <form class="form form--login">
+//   <div class="form__field">
+//     <h3 class="form__title">Login</h3>
+//   </div>
+//   <div class="form__field">
+//     <p class="form__description">If you have an account, please sign in for faster checkout.</p>
+//   </div>
+//   <div class="form__field">
+//     <label class="form__label" for="username">Username</label>
+//     <input class="form__input-field" type="text" id="username" />
+//   </div>
+//   <div class="form__field">
+//     <label class="form__label" for="password">Password</label>
+//     <input class="form__input-field" type="password" id="password" />
+//   </div>
+//   <div class="form__field form__field--actions">
+//     <button class="sr-btn--primary sr-btn">Login</button>
+//   </div>
+// </form>
+//
+// Styleguide 2.2.1
+.form {
+  &__field {
+    margin-bottom: 8px;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  &__label,
+  &__input-field {
+    width: 100%;
+    clear: both;
+  }
+
+  &__label {
+    text-align: left;
+  }
+
+  &__input-field {
+    padding: 5px 10px;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+}
